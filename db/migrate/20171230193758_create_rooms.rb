@@ -3,8 +3,9 @@ class CreateRooms < ActiveRecord::Migration[5.1]
     create_table :rooms do |t|
       t.string :room_number
       t.string :type
-      t.int :beds
+      t.integer :beds
       t.string :photo_url
+      t.integer :hotel_id
 
       t.timestamps
     end

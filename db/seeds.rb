@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Hotel.create(name:"explora Chile", location:"Patagonia, Chile")
+puts "Hotel:explora created"
+
+peninsula = Hotel.new
+peninsula.name = "The peninsula Hong Kong"
+peninsula.location = "Hong Kong"
+peninsula.save
+
+Hotel.create(name:"Setai Miami", location:"Miami, Florida")
